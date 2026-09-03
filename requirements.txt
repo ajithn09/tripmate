@@ -1,0 +1,22 @@
+streamlit==1.38.0
+langgraph==1.2.2
+langchain-groq==1.1.3
+psycopg[binary,pool]==3.3.4
+psycopg_pool==3.3.1
+python-dotenv==1.2.2
+requests==2.34.2
+langgraph-checkpoint-postgres==3.1.0
+langchain-mcp-adapters==0.3.0
+nest_asyncio==1.6.0
+mcp==1.28.1
+certifi==2026.6.17
+fpdf2==2.8.8
+
+# LangSmith tracing (optional at runtime -- see backend.py). Already pulled
+# in transitively by langchain-core, pinned explicitly here since a feature
+# now actively depends on it.
+langsmith==0.10.18
+
+# Provides the `uvx` binary used to launch the AviationStack MCP server
+# as a stdio subprocess, so no separate system-level uv install is needed.
+uv==0.9.9

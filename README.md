@@ -10,7 +10,7 @@
 ![Postgres](https://img.shields.io/badge/checkpointer-postgres-336791?logo=postgresql&logoColor=white)
 ![Guardrails](https://img.shields.io/badge/guardrails-input%20%2B%20output-2E7D32)
 ![Human-in-the-loop](https://img.shields.io/badge/human--in--the--loop-approval%20gate-6A4CFF)
-![LangSmith](https://img.shields.io/badge/tracing-langsmith%20(optional)-1C3C3C)
+![LangSmith](https://img.shields.io/badge/tracing-langsmith-1C3C3C)
 
 </div>
 

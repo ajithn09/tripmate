@@ -128,9 +128,6 @@ multi-agent-trip-planner-system/
    ```
 
 3. **Configure secrets** — copy the example file and fill in real values:
-   ```powershell
-   Copy-Item .streamlit\secrets.toml.example .streamlit\secrets.toml
-   ```
    Edit `.streamlit/secrets.toml` with your `GROQ_API_KEY`, `TAVILY_API_KEY`,
    `OPENWEATHER_API_KEY`, `AVIATION_STACK_API_KEY`, and `DATABASE_URL`. (A
    plain `.env` file with the same keys also works for local dev.)

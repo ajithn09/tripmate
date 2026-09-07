@@ -79,20 +79,6 @@ guardrail checks passed — so the pipeline isn't a black box.
 5. **Final agent** — produces the polished response, incorporating your
    feedback if you asked for changes.
 
-### Scope notes
-
-- **Flight agent depends on `uvx`.** AviationStack's MCP server runs as a
-  stdio subprocess launched via `uvx aviationstack-mcp`. The `uv` package in
-  `requirements.txt` provides the `uvx` binary, so no separate system
-  install is needed — but a subprocess launch is still the most fragile
-  piece of this app to run on a hosted container. If it's unreachable or
-  misconfigured, `flight_agent` fails soft to LLM-only guidance (clearly
-  labeled as an estimate) instead of breaking the whole run.
-- **Checkpointer is Postgres**, not SQLite/in-memory. Streamlit Community
-  Cloud's filesystem is ephemeral and the app sleeps on inactivity — a
-  paused HITL thread needs to survive that, which only an external database
-  does reliably.
-
 ## Project structure
 
 ```
